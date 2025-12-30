@@ -1,0 +1,16 @@
+seed: 42
+duration_s: 3600
+sampling_hz: 1
+channels:
+  power_bus_v: {mean: 28.0, std: 0.05}
+  battery_temp_c: {mean: 22.0, std: 0.2}
+  att_err_deg: {mean: 0.05, std: 0.02}
+rolling_window_s: 60
+z_threshold: 3.0
+quiet_period_s: 10
+severity_thresholds: {LOW: 3.0, MED: 4.0, HIGH: 6.0}
+decision_policy: {HIGH: IMMEDIATE_DOWNLINK, MED: STORE_FORWARD, LOW: MONITOR}
+downlink:
+  window_interval_s: 1800
+  window_duration_s: 300
+ground_processing_latency_s: 10
