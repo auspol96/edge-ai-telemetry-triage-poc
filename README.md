@@ -29,7 +29,7 @@ This PoC shows that **onboard triage alone** can:
 - 🧠 Conservative detection to minimize false positives
 
 ## Repository structure
-/simulator Telemetry generation and anomaly injection
+/simulator Telemetry generation and anomaly injection.
 /pipeline Edge-style detection and triage logic
 /evaluation Time-to-action and bandwidth analysis
 /outputs Generated logs, decisions, and summaries
